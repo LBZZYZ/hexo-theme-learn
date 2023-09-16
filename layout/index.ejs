@@ -1,6 +1,6 @@
 <section class="posts">
     <% page.posts.each(function (post) { %>
-    <article class="post">
+    <article class="post <%= getPostBgColor(post.color) %>">
         <div class="post-title">
             <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
         </div>
@@ -13,3 +13,4 @@
     </article>
     <% }) %>
 </section>
+<%- partial('_partial/paginator') %>
