@@ -1,6 +1,6 @@
 <section class="posts">
     <% page.posts.each(function (post) { %>
-    <article class="post <%= getPostBgColor(post.color) %>">
+    <article class="post">
         <div class="post-title">
             <a class="post-title-link" href="<%- url_for(post.path) %>"><%= post.title %></a>
         </div>
